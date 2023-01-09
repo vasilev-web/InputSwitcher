@@ -1,0 +1,29 @@
+.form-switcher {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__input {
+        text-align: center;
+        max-width: 90px;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &__button {
+        flex-shrink: 0;
+        min-width: 40px;
+    }
+
+    &__error {
+        &.invalid-feedback {
+            display: block;
+        }
+    }
+}
